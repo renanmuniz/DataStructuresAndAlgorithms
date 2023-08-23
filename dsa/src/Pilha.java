@@ -62,13 +62,13 @@ public class Pilha {
         System.out.println("Inicio na página do Google:");
         urlAnterior.push("google.com.br");
 
-        System.out.println("Vou para gmail:");
+        System.out.println("\nVou para gmail:");
         urlPosterior.push("gmail.com");
 
         System.out.println("URL ANTERIOR: " + urlAnterior);
         System.out.println("URL POSTERIOR: " + urlPosterior);
 
-        System.out.println("vou do gmail para outlook:");
+        System.out.println("\nvou do gmail para outlook:");
         urlAnterior.push("gmail.com");
         urlPosterior.pop();
         urlPosterior.push("outlook.com");
@@ -76,7 +76,7 @@ public class Pilha {
         System.out.println("URL ANTERIOR: " + urlAnterior);
         System.out.println("URL POSTERIOR: " + urlPosterior);
 
-        System.out.println("vou do outlook para duckduckgo:");
+        System.out.println("\nvou do outlook para duckduckgo:");
         urlAnterior.push("outlook.com");
         urlPosterior.pop();
         urlPosterior.push("duckduckgo.com");
@@ -84,16 +84,31 @@ public class Pilha {
         System.out.println("URL ANTERIOR: " + urlAnterior);
         System.out.println("URL POSTERIOR: " + urlPosterior);
 
-        System.out.println("volto para outlook:");
+        System.out.println("\nvolto para outlook:");
         urlAnterior.pop();
         urlPosterior.push("outlook.com");
 
         System.out.println("URL ANTERIOR: " + urlAnterior);
         System.out.println("URL POSTERIOR: " + urlPosterior);
 
-        System.out.println("volto mais um para gmail:");
+        System.out.println("\nvolto mais um para gmail:");
         urlAnterior.pop();
         urlPosterior.push("gmail.com");
+
+        System.out.println("URL ANTERIOR: " + urlAnterior);
+        System.out.println("URL POSTERIOR: " + urlPosterior);
+
+        System.out.println("\navanço de volta para outlook:");
+        urlPosterior.pop();
+        urlAnterior.push("gmail.com");
+
+        System.out.println("URL ANTERIOR: " + urlAnterior);
+        System.out.println("URL POSTERIOR: " + urlPosterior);
+
+        System.out.println("\nse digito novo endereço(youtube.com) e não navego pelo anteorior/posterior:");
+        urlPosterior.clear(); //limpa sequencia posterior pois mudou o destino da navegação
+        urlAnterior.push("outlook.com"); //salva o endereço que tava na anterior
+        urlPosterior.push("youtube.com"); //vai para novo endereço
 
         System.out.println("URL ANTERIOR: " + urlAnterior);
         System.out.println("URL POSTERIOR: " + urlPosterior);
