@@ -16,3 +16,7 @@ R
 "src/binarySearch/BinarySearch.java,2/4/2434682d85495ded15160210a785d594abd7cc4a
 N
 src/bubbleSort/BubbleSort.java,3/e/3e06f43b1e35d44c5a3a6df457165922019c5573
+F
+src/SelectionSort.java,7/0/70184f5bb63ef7d88185f65967dc8213c407c3b9
+T
+$src/selectionSort/SelectionSort.java,f/d/fd3d817bbf981c559d233091d54a587cf8c244de
