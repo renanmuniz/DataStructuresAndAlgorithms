@@ -3,6 +3,7 @@ package binarySearch;
 public class BinarySearch {
     // Busca binária, bom para grandes quantidades de valores. Devem estar ordenados para funcionar.
     // Complexidade O(log n), ou seja, quanto mais dados, mais eficiente é.
+    // Busca é realizada em arrays ordenados e sempre cortando pela metade caso o valor esteja acima ou abaixo.
 
     public static void main(String[] args) {
 
